@@ -19,21 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        label1.backgroundColor = .red
-        label1.backgroundColor = .green
-        label1.backgroundColor = .orange
-        label1.backgroundColor = .purple
-        label1.backgroundColor = .black
-
-        
         self.view.addSubview(label1)
         self.view.addSubview(label2)
         self.view.addSubview(label3)
         self.view.addSubview(label4)
-        
-        
-      
-        
         
         var previous: UILabel?
             var i = 1
