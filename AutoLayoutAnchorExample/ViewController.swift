@@ -28,9 +28,12 @@ class ViewController: UIViewController {
             var i = 1
         for label in [label1, label2, label3, label4] {
             label.translatesAutoresizingMaskIntoConstraints = false
-            label.leftAnchor.constraint(equalTo: self.view.leftAnchor,constant: 10).isActive = true
+            if i == 1{
+                label.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
+            }
             
-            label.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.9).isActive = true
+            label.leftAnchor.constraint(equalTo: self.view.leftAnchor,constant: 10).isActive = true
+            label.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.95).isActive = true
             label.heightAnchor.constraint(equalToConstant: 88).isActive = true
 
             if let previous = previous {
